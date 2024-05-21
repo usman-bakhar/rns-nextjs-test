@@ -5,15 +5,35 @@ const config: Config = {
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/modules/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+    colors: {
+      white: {
+        100: "#FFF",
+      },
+
+      gray: {
+        100: "#595857",
+        300: "#000000",
+      },
+
+      cosmic: {
+        100: "#EEE1F0",
+        200: "#961A88",
+      },
+
+      classic: {
+        100: "#E9EEF6",
+        200: "#191978",
+      },
+
+      atomic: {
+        100: "#EAF9F7",
+        200: "#00AEB1",
       },
     },
+    extend: {},
   },
   plugins: [],
 };
